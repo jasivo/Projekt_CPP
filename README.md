@@ -19,26 +19,26 @@ Harmonogram prac:
   Raportowanie postępów prac będzie się odbywać co 2 tygodnie, zgodnie z przedstawionym harmonogramem (z zespołu MS Teams).
   
 Plan na pracę do Raportu I:
-    - wybranie biblioteki (planowany SFML);
-    - wykonanie ekranu startowego;
-    - przygotowanie fabuły;
-    - przygotowanie podstawy mapy;
+- wybranie biblioteki (planowany SFML);
+- wykonanie ekranu startowego;
+- przygotowanie fabuły;
+- przygotowanie podstawy mapy;
     
 Plan na pracę do Raportu II:
-    - przygotowanie kodu opisującego statystyki i ruch głównej postaci;
-    - prace nad kodem klas przeciwników oraz ich SI;
-    - początek prac nad systemem walki;
-    - prace związane z wprowadzeniem do gry ekwipunku głównej postaci;
+- przygotowanie kodu opisującego statystyki i ruch głównej postaci;
+- prace nad kodem klas przeciwników oraz ich SI;
+- początek prac nad systemem walki;
+- prace związane z wprowadzeniem do gry ekwipunku głównej postaci;
     
 Plan na pracę do Raportu III:
-    - wprowadzenie zapisu i wczytywania stanu gry;
-    - przygotowanie zadań do wykonania w celu przystąpienia do zadania głównego;
-    - wprowadzenie efektu "ruchu" tekstur postaci przy przemieszczaniu sie ich po mapie;
+- wprowadzenie zapisu i wczytywania stanu gry;
+- przygotowanie zadań do wykonania w celu przystąpienia do zadania głównego;
+- wprowadzenie efektu "ruchu" tekstur postaci przy przemieszczaniu sie ich po mapie;
     
 Plan na pracę do Raportu IV:
-    - wykonanie zadań zaplanowanych do poprzednich rapotów, ale których nie udało się wykonać;
-    - przygotowanie prototypu gry;
-    - testy prototypu;
+- wykonanie zadań zaplanowanych do poprzednich rapotów, ale których nie udało się wykonać;
+- przygotowanie prototypu gry;
+- testy prototypu;
     
   Jeżeli wszytkie testy prototypu przebiegną pomyślnie pozostały czas przeznaczę na dopracowanie go, oraz poprawki kosmetyczne kodu.
   Biblioteką używaną przy pracy nad projektem jest SFML, jednak jeżeli znajdę jakąś alternatywę dla tej biblioteki poinformuje o tym Pana przed przedstawieniem Raportu I.
