@@ -18,24 +18,24 @@ Cele:
 Harmonogram prac:
   Raportowanie postępów prac będzie się odbywać co 2 tygodnie, zgodnie z przedstawionym harmonogramem (z zespołu MS Teams).
   
-  Plan na pracę do Raportu I:
+Plan na pracę do Raportu I:
     - wybranie biblioteki (planowany SFML);
     - wykonanie ekranu startowego;
     - przygotowanie fabuły;
     - przygotowanie podstawy mapy;
     
-  Plan na pracę do Raportu II:
+Plan na pracę do Raportu II:
     - przygotowanie kodu opisującego statystyki i ruch głównej postaci;
     - prace nad kodem klas przeciwników oraz ich SI;
     - początek prac nad systemem walki;
     - prace związane z wprowadzeniem do gry ekwipunku głównej postaci;
     
-  Plan na pracę do Raportu III:
+Plan na pracę do Raportu III:
     - wprowadzenie zapisu i wczytywania stanu gry;
     - przygotowanie zadań do wykonania w celu przystąpienia do zadania głównego;
     - wprowadzenie efektu "ruchu" tekstur postaci przy przemieszczaniu sie ich po mapie;
     
-  Plan na pracę do Raportu IV:
+Plan na pracę do Raportu IV:
     - wykonanie zadań zaplanowanych do poprzednich rapotów, ale których nie udało się wykonać;
     - przygotowanie prototypu gry;
     - testy prototypu;
