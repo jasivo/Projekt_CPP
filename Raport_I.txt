@@ -12,3 +12,4 @@ Na ekranie startowym zostały również przygotowane 3 przyciski:
 Do pierwszego została przypisana narazie pusta funkcja, do drugiego funkcjonalność zostanie
 dodaną później, a trzeci kończy działanie programu. 
 Wybrałem również grafikę pod podstawę mapy oraz wymyśliłem kilka pierwszych zadań. 
+W ciągu kilku ostatnich dni rozpocząłem planowanie konstrukcji klasy postaci oraz przedmiotów. 
