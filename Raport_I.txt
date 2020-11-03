@@ -1,0 +1,14 @@
+Raport I
+Projekt w C++
+03.11.2020
+
+Do dnia dzisiejszego udało mi się przygotować ekran startowy. 
+Narazie jest on zrealizowany przy pomocy prostych kształtów (shapes) 
+biblioteki SFML, w przyszłości po przygotowaniu grafiki zostanie ona podmieniona.
+Na ekranie startowym zostały również przygotowane 3 przyciski:
+- nowa gra, 
+- wczytywanie, 
+- wyjście
+Do pierwszego została przypisana narazie pusta funkcja, do drugiego funkcjonalność zostanie
+dodaną później, a trzeci kończy działanie programu. 
+Wybrałem również grafikę pod podstawę mapy oraz wymyśliłem kilka pierwszych zadań. 
