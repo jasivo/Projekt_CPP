@@ -1,0 +1,14 @@
+Raport II
+Projekt w C++
+Paweł Jurkiw
+17.11.2020
+
+Co do założeń projektowych do raportu II udało mi się przygotować kod opisujący statystyki głównej postaci oraz jej ruch,
+kod przeciwników oraz ich SI jest narazie tylko "na papierze" i postaram się go wprowadzić w najbliższych dniach.
+Przygotowałem już również kod dla ekwipunku wstępnie 3 przedmioty - broń, tarcza, mikstury - w różnych wariantach (słabszych i silniejszych) o różnych wymaganiach.
+Poza tym przygotowałem system kolizji w oparciu o detekcje AABB (Axis-Aligned Bounding Box) jednak zostaje ona jeszcze do przetestowania,
+ponieważ nie stworzyłem jeszcze żadnych elementów otoczenia.
+W najbliższych dniach chciałbym skupić się na stworzeniu przeciwników i rozpoczęciu prac nad systemem walki.
+
+Kod programu zostanie udostępniony w repozytorium wieczorem lub jutro.
+W związku z problemami technicznymi z kodem do raportu I nie wrzuciłem go jeszcze, ale wymaga on kilku zmian, którymi zajmę się po zakończeniu obecnego etapu prac. 
