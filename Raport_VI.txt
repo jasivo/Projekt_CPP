@@ -1,0 +1,18 @@
+Paweł Jurkiw
+15.12.2020
+=================
+Raport IV
+=================
+
+Wykonane:
+- animacja ruchu postaci,
+- ruch kamery za postacią,
+- efekt (animacja) ścinania (zbierania) drzew,
+- przygotowano fabułę,
+
+Do wykonania:
+- ekwipunek postaci
+- powielenie efektu przygotowanego dla drzewa dla innych objektów np.: rudy żelaza,
+
+W przesłanym kodzie funkcje pliku main.cpp pełni plik program.cpp.
+Projekt zatrzymał się na etapie testowania animacji ścinanego drzewa, co mozna zobaczy kompiując plik program.cpp z pomocą SFML-a.
