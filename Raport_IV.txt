@@ -7,7 +7,7 @@ Raport IV
 Wykonane:
 - animacja ruchu postaci,
 - ruch kamery za postacią,
-- efekt (animacja) ścinania (zbierania) drzew,
+- efekt (animacja) ścinania (zbierania) oraz odrastania drzew,
 - przygotowano fabułę,
 
 Do wykonania:
@@ -15,4 +15,4 @@ Do wykonania:
 - powielenie efektu przygotowanego dla drzewa dla innych objektów np.: rudy żelaza,
 
 W przesłanym kodzie funkcje pliku main.cpp pełni plik program.cpp.
-Projekt zatrzymał się na etapie testowania animacji ścinanego drzewa, co mozna zobaczy kompiując plik program.cpp z pomocą SFML-a.
+Projekt zatrzymał się na etapie testowania animacji ścinanego drzewa oraz jego wolniejszego odrastania w czasie, co mozna zobaczy kompiując plik program.cpp z pomocą SFML-a.
