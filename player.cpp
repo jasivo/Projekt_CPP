@@ -1,7 +1,7 @@
 #include "player.hpp"
 
 Player::Player(float x, float y, float v)
-: xpos(x),ypos(y),velocity(v),height(80),width(50),strenght(5),health(30),defense(5)
+: xpos(x),ypos(y),velocity(v),height(80),width(50),strenght(0),health(40),defense(0)
 {
     std::cout << "Utworzono gracza o pozycji " << x << " " << y << " i wymiarach " << height << " " << width << " i predkosci " << velocity << std::endl;
     Player::player_texture.loadFromFile("player.png");
@@ -118,4 +118,24 @@ void Player::Update(float delta_time)
 sf::Vector2f Player::get_center()
 {
     return sf::Vector2f(xpos+(width/2),ypos+(height/2));
+}
+
+int & Player::get_strenght()
+{
+    return strenght;
+}
+
+int & Player::get_defence()
+{
+    return defense;
+}
+
+int & Player::get_maxhealth()
+{
+    return max_health;
+}
+
+int & Player::get_health()
+{
+    return health;
 }

@@ -1,7 +1,7 @@
 #include "terrain.hpp"
 
 Tree::Tree(const int x, const int y)
-: xpos(x), ypos(y), width(89), height(100), logs(3.0f)
+: xpos(x), ypos(y), width(89), height(100), logs(3000)
 {
     Tree::tree_texture.loadFromFile("trees.png");
     Tree::tree_shape.setSize(sf::Vector2f(89.0f,100.0f));
@@ -30,13 +30,13 @@ void Tree::get_texture_size(sf::Texture &texture, sf::Vector2u &vector)
 
 void Tree::update_shape()
 {
-    if((logs <= 3.0) && (logs > 2.0f))
+    if((logs <= 3000) && (logs > 2000))
         tree_shape.setTextureRect(sf::IntRect(texture_size.x*1, 0, texture_size.x, texture_size.y));
-    else if((logs <= 2.0) && (logs > 1.0f))
+    else if((logs <= 2000) && (logs > 1000))
         tree_shape.setTextureRect(sf::IntRect(texture_size.x*0, 0, texture_size.x, texture_size.y));    
-    else if((logs < 1.0) && (logs > 0.0f))
+    else if((logs < 1000) && (logs > 0))
         tree_shape.setTextureRect(sf::IntRect(0, texture_size.y*1, texture_size.x, texture_size.y));
-    else if(logs <= 0.0f)
+    else if(logs <= 0)
         tree_shape.setTextureRect(sf::IntRect(texture_size.x*1, (texture_size.y*1)+10, texture_size.x, texture_size.y-10));
 }
 
@@ -45,8 +45,8 @@ sf::Vector2f Tree::get_center()
     return sf::Vector2f(xpos+(width/2),ypos+(height/2));
 }
 
-void Tree::update_logs(float i)
+void Tree::update_logs(int i)
 {
     if(logs > 0)
-        logs += i;
+        logs -= i;
 }

@@ -12,7 +12,7 @@ public:
     void Draw(sf::RenderWindow& window);
     void get_texture_size(sf::Texture &texture, sf::Vector2u &vector);
     void update_shape();
-    void update_logs(float i);
+    void update_logs(int i);
     float get_logs() {return logs;};
     sf::Vector2f get_center();
 
@@ -21,7 +21,7 @@ private:
     const int ypos;;
     int width;
     int height;
-    float logs;
+    int logs;
     sf::Vector2u texture_size;
     sf::Texture tree_texture;
     sf::RectangleShape tree_shape;
