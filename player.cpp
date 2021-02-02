@@ -1,10 +1,10 @@
 #include "player.hpp"
 
 Player::Player(float x, float y, float v)
-: xpos(x),ypos(y),velocity(v),height(80),width(50),strenght(5),health(30),defense(5)
+: xpos(x),ypos(y),velocity(v),height(80),width(50),strenght(5),health(40),defense(5),max_health(40)
 {
-    std::cout << "Utworzono gracza o pozycji " << x << " " << y << " i wymiarach " << height << " " << width << " i predkosci " << velocity << std::endl;
-    Player::player_texture.loadFromFile("player.png");
+    //std::cout << "Utworzono gracza o pozycji " << x << " " << y << " i wymiarach " << height << " " << width << " i predkosci " << velocity << std::endl;
+    Player::player_texture.loadFromFile("images/player.png");
     Player::player_shape.setSize(sf::Vector2f(50.0f,80.0f));
     Player::player_shape.setTexture(&player_texture);
     Player::get_texture_size(player_texture, texture_size);
@@ -13,6 +13,25 @@ Player::Player(float x, float y, float v)
     Player::player_shape.setOrigin(Player::player_shape.getSize()/2.0f);
     Player::imageCount = sf::Vector2u(2,3);
     Player::face = 4;
+    Player::fonte.loadFromFile("Winter.ttf");
+    Player::state.setFont(fonte);
+    Player::state.setCharacterSize(20);
+    Player::state.setFillColor(sf::Color::White);
+    Player::hp_info.setFont(fonte);
+    Player::hp_info.setCharacterSize(20);
+    Player::hp_info.setFillColor(sf::Color::White);
+}
+
+void Player::Update_hp_info()
+{
+    hp_info.setPosition(get_position()-sf::Vector2f(20.0f,55.0f));
+    hp_info.setString(std::to_string(get_health())+" / "+std::to_string(get_maxhealth()));
+    get_state().setPosition(get_position()-sf::Vector2f(20.0f,77.0f));
+}
+
+sf::Text Player::get_hp_info()
+{
+    return hp_info;
 }
 
 void Player::Draw(sf::RenderWindow& window)
@@ -118,4 +137,59 @@ void Player::Update(float delta_time)
 sf::Vector2f Player::get_center()
 {
     return sf::Vector2f(xpos+(width/2),ypos+(height/2));
+}
+
+int & Player::get_strenght()
+{
+    return strenght;
+}
+
+int & Player::get_defence() 
+{
+    return defense;
+}
+
+int & Player::get_maxhealth()
+{
+    return max_health;
+}
+
+int & Player::get_health()
+{
+    return health;
+}
+
+sf::Text & Player::get_state()
+{
+    return state;
+}
+
+void Player::set_item(int id)
+{
+    if((id == 0) && (sword == false))
+    {
+        sword = true;
+        strenght += 5;
+    }
+    else if((id == 1) && (armor == false))
+    {
+        armor = true;
+        max_health +=20;
+        health += 20;
+    }
+    else if((id == 2) && (shield == false))
+    {
+        shield = true;
+        defense += 5;
+    }
+}
+
+bool Player::item(int id)
+{
+    if(id==0)
+        return sword;
+    else if(id==1)
+        return armor;
+    else if(id==2)
+        return shield;
 }
